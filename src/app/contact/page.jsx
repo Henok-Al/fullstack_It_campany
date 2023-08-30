@@ -5,7 +5,7 @@ import React from "react";
 // import styles from "./page.module.css";
 import "./contact.module.css"
 import Image from "next/image";
-import Button from "@/components/Button/Button";
+import Buttton from "../../components/Button/Button"
 
 export default function ContactForm() {
   const [fullname, setFullname] = useState("");

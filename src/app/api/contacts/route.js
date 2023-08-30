@@ -1,5 +1,5 @@
-import connect from "@/utils/db";
-import Contact from "@/models/Contact";
+import connect from "../../../utils/db"
+import Contact from "../../../models/Contact"
 import { NextResponse } from "next/server";
 import mongoose from "mongoose";
 
