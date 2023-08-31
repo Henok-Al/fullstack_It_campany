@@ -1,0 +1,40 @@
+/* components/Tabs.css */
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .tab-buttons button {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .tab-buttons button.active {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .tab-content {
+    padding: 20px;
+  }
+  
+  .tab-pane {
+    display: none;
+  }
+  
+  .tab-pane.active {
+    display: block;
+  }
+  

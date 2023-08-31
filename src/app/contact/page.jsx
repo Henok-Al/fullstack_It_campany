@@ -45,65 +45,64 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="contact-container">
-      <div className="imgContainer">
-        {/* <Image src="/contact.png" alt="" fill={true} className="image" /> */}
+    <div className="h-screen flex items-center justify-center">
+  <div className="w-full md:w-1/2">
+    <form onSubmit={handleSubmit} className="bg-white p-6 shadow-md rounded-lg">
+      <div className="mb-4">
+        <label htmlFor="fullname" className="block mb-1">Full Name</label>
+        <input
+          onChange={(e) => setFullname(e.target.value)}
+          value={fullname}
+          type="text"
+          id="fullname"
+          placeholder="John Doe"
+          className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+        />
       </div>
-      <form
-        onSubmit={handleSubmit}
-        className="" 
-      >
-        <div>
-          <label htmlFor="fullname" className="mr-5">Full Name</label>
-          <input
-            onChange={(e) => setFullname(e.target.value)}
-            value={fullname}
-            type="text"
-            id="fullname"
-            placeholder="John Doe"
-          />
-        </div>
 
-        <div>
-          <label htmlFor="email">Email</label>
-          <input
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-            type="text"
-            id="email"
-            placeholder="john@gmail.com"
-          />
-        </div>
-        <div className="bg-slate-100 flex flex-col">
+      <div className="mb-4">
+        <label htmlFor="email" className="block mb-1">Email</label>
+        <input
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
+          type="text"
+          id="email"
+          placeholder="john@gmail.com"
+          className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+        />
+      </div>
+
+      <div className="bg-slate-100 mb-4 py-2 px-3 rounded-lg">
         {error &&
           error.map((e) => (
             <div
               className={`${
                 success ? "text-green-800" : "text-red-600"
-              } px-5 py-2`}
+              } text-sm`}
+              key={e}
             >
               {e}
             </div>
           ))}
       </div>
 
-        <div>
-          <label htmlFor="message">Your Message</label>
-          <textarea
-            onChange={(e) => setMessage(e.target.value)}
-            value={message}
-            className="h-32"
-            id="message"
-            placeholder="Type your message here..."
-          ></textarea>
-        </div>
+      <div className="mb-4">
+        <label htmlFor="message" className="block mb-1">Your Message</label>
+        <textarea
+          onChange={(e) => setMessage(e.target.value)}
+          value={message}
+          className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+          id="message"
+          placeholder="Type your message here..."
+        ></textarea>
+      </div>
 
-        <button className="bg-green-700 p-3 text-white font-bold" type="submit">
-          Send
-        </button>
-      </form>
+      <button className="bg-green-700 text-white font-bold py-2 px-4 rounded-lg" type="submit">
+        Send
+      </button>
+    </form>
+  </div>
+</div>
 
-      
-    </div>
   );
 }

@@ -1,15 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import styles from "./page.module.css";
 import useSWR from "swr";
-// import { useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
-import { signOut, useSession } from "next-auth/react";
 
 
-
-const Dashboard = () => {
+const Message = () => {
 
   const session = useSession();
 
@@ -39,21 +35,15 @@ const Dashboard = () => {
 
     return (
       
-      <div className={styles.container}>
-        <h1 className="text-green-700">Dashboard</h1>
-        {session.status === "authenticated" && (
-          <button className={styles.logout} onClick={signOut}>
-            Logout
-          </button>
-
-          
-        )}
+      <div >
+        <h1 className="text-green-700">Message</h1>
+        
       </div>
     );
   }
 };
 
-export default Dashboard;
+export default Message;
 
 
 

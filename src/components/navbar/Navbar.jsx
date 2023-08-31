@@ -32,11 +32,11 @@ const links = [
     title: "Contact",
     url: "/contact",
   },
-  {
-    id: 6,
-    title: "Dashboard",
-    url: "/dashboard",
-  },
+  // {
+  //   id: 6,
+  //   title: "",
+  //   url: "/dashboard",
+  // },
 ];
 
 const Navbar = () => {
@@ -54,11 +54,11 @@ const Navbar = () => {
             {link.title}
           </Link>
         ))}
-        {session.status === "authenticated" && (
+        {/* {session.status === "authenticated" && (
           <button className={styles.logout} onClick={signOut}>
             Logout
           </button>
-        )}
+        )} */}
       </div>
     </div>
   );
