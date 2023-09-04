@@ -7,10 +7,10 @@ const Footer = () => {
     <div className={styles.container}>
       <div>@2023 ATC. All rights reserverd.</div>
       <div className='styles.social'>
-        <Image src="/1.png" width={15} height={15} className={styles.icon}  alt="atlas fb" />
-        <Image src="/2.png" width={15} height={15} className={styles.icon}  alt="atlas ista" />
-        <Image src="/3.png" width={15} height={15} className={styles.icon}  alt="atlas twitter" />
-        <Image src="/4.png" width={15} height={15} className={styles.icon}  alt="atlas yt" />
+        <img src="/1.png" width={15} height={15} className={styles.icon}  alt="atlas fb" />
+        <img src="/2.png" width={15} height={15} className={styles.icon}  alt="atlas ista" />
+        <img src="/3.png" width={15} height={15} className={styles.icon}  alt="atlas twitter" />
+        <img src="/4.png" width={15} height={15} className={styles.icon}  alt="atlas yt" />
       </div>
     </div>
   )

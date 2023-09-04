@@ -47,7 +47,7 @@ export default function ContactForm() {
   return (
     <div className="h-screen flex items-center justify-center">
   <div className="w-full md:w-1/2">
-    <form onSubmit={handleSubmit} className="bg-white p-6 shadow-md rounded-lg">
+    <form onSubmit={handleSubmit} className="bg-neutral-900 p-6 shadow-md rounded-lg">
       <div className="mb-4">
         <label htmlFor="fullname" className="block mb-1">Full Name</label>
         <input
@@ -55,7 +55,7 @@ export default function ContactForm() {
           value={fullname}
           type="text"
           id="fullname"
-          placeholder="John Doe"
+          placeholder="enter your full name"
           className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
         />
       </div>
@@ -67,12 +67,12 @@ export default function ContactForm() {
           value={email}
           type="text"
           id="email"
-          placeholder="john@gmail.com"
+          placeholder="enter you email"
           className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
         />
       </div>
-
-      <div className="bg-slate-100 mb-4 py-2 px-3 rounded-lg">
+      
+      <div className="mb-4 py-2 px-3 rounded-lg">
         {error &&
           error.map((e) => (
             <div
