@@ -20,7 +20,6 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <AuthProvider>
             <div className="container">
-            {/* {isDashboard ? <DashboardNavbar />: <Navbar />  } */}
               <Navbar />
               {children}
               <Footer />

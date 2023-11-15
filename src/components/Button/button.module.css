@@ -1,8 +1,13 @@
 .container {
     padding: 20px;
-    background-color: #53c28b;
+    background-color: #3270d4;
     border: none;
     border-radius: 5px;
     width: max-content;
     color: white;
 }
+
+.container:hover {
+    background-color: #6CA1F8;
+}
+

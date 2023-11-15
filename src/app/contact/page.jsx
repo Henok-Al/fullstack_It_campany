@@ -47,7 +47,7 @@ export default function ContactForm() {
   return (
     <div className="h-screen flex items-center justify-center">
   <div className="w-full md:w-1/2">
-    <form onSubmit={handleSubmit} className="bg-neutral-900 p-6 shadow-md rounded-lg">
+    <form onSubmit={handleSubmit} className="border-500-red p-6 shadow-md rounded-lg">
       <div className="mb-4">
         <label htmlFor="fullname" className="block mb-1">Full Name</label>
         <input
@@ -97,7 +97,7 @@ export default function ContactForm() {
         ></textarea>
       </div>
 
-      <button className="bg-green-700 text-white font-bold py-2 px-4 rounded-lg" type="submit">
+      <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg" type="submit">
         Send
       </button>
     </form>

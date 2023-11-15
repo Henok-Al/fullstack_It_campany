@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 
 
-const CreatePassword = () => {
+const CreateAccount = () => {
   const [error, setError] = useState(null);
 
   const session = useSession();
@@ -84,4 +84,4 @@ const CreatePassword = () => {
 };
 }
 
-export default CreatePassword;
+export default CreateAccount;
