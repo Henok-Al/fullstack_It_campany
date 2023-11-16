@@ -63,7 +63,7 @@ const Navbar = () => {
         </Link>
         <div className="lg:hidden flex ">
           <button
-            className="text-white"
+            className=""
             onClick={toggleMenu}
           >
             {isMenuOpen ? (
@@ -116,7 +116,7 @@ const Navbar = () => {
           ))}
           {session.status === "authenticated" && (
             <button
-              className="text-white hover:text-gray-200"
+              className=" hover:text-gray-200"
               onClick={signOut}
             >
               Logout

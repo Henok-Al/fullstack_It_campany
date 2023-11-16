@@ -24,11 +24,7 @@ const links = [
     title: "Manage Blog",
     url: "dashboard/ManageBlog",
   },
-  {
-    id: 4,
-    title: "Manage Portfolio",
-    url: "dashboard/ManagePortfolio",
-  },
+
 ];
 
 const DashboardNavbar = () => {
@@ -54,18 +50,17 @@ const DashboardNavbar = () => {
 
   if (session.status === "authenticated") {
     return (
-      <div className=" flex col  p-20 bg-white rounded-[20px]  border-slate-600 shadow-slate-400  bg-zinc-900  shadow-blue-500 backdrop-opacity-100  border-slate-700 sticky">
-        <div className="flex text-red-500">
+      <div className="flex justify-center items-center col  p-2  border-slate-600 shadow-slate-400   shadow-blue-500 backdrop-opacity-100  border-slate-700">
+        <div className="fle">
           {links.map((link) => (
             <Link
               key={link.id}
               href={link.url}
-              className="mx-4 hover:text-blue-300 text-gray-700 text-base"
+              className="mx-4 hover:text-blue-300 "
             >
               {link.title}
             </Link>
           ))}
-          <button>Go Back</button>
 
 
         </div>
